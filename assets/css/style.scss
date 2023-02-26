@@ -1,0 +1,284 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Zen Maru Gothic', sans-serif;
+    color: #0E3E30;
+}
+
+header{
+    max-width: 1100px;
+    display: flex;
+    .site-title{
+        font-size: 2.5rem;
+        font-weight: bold;
+        position: absolute;
+        top:6.5%;
+        left: 12%;
+    }
+    .global-nav{
+        background-color: #0E3E30;
+        padding: 20px 50px;
+        border-radius: 30px;
+        position: fixed;
+        top: 5%;
+        right: 12%;
+        box-shadow: 0 0 10px gray;
+        z-index: 999999;
+        ul{
+            display: flex;
+            gap: 50px;
+            justify-content: space-around;
+            li{
+                color: #ffffff;
+            }
+        }
+    }
+}
+
+.section{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 16px;
+    & .section-title{
+        text-align: center;
+        h1{
+            font-size: 2rem;
+            font-weight: bold;
+        }
+        p{
+            font-size: 1rem;
+        }
+    }
+}
+
+#top-section{
+    height: 650px;
+    margin-top: 200px;
+    position: relative;
+    .top-title-inner{
+        width: 80%;
+        margin:0 auto;
+        height: 500px;
+        border-radius: 75px;
+        // display: flex;
+        // justify-content: center;
+        // align-items: center;
+        // flex-direction: column;
+        background-image:url(../img/bg-leaves.png);
+        .top-title{
+            position: absolute;
+            top: 38%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            z-index: 9999;
+            h1{
+                font-size: 2rem;
+                font-weight: bold;
+                text-align: center;
+                background-color: #ffffff;
+                padding: 10px;
+                & .main-word{
+                    color: #11AD7F;
+                }
+            }
+            .sub-word{
+                text-align: center;
+                margin-top: 10px;
+                span{
+                    background-color: #ffffff;
+                    color: #0E3E30;
+                    padding: 0 5px;
+                }
+
+            }
+        }
+    }
+    
+    .bg-circle{
+        position: absolute;
+        top: 0%;
+        left: 0%;
+    }
+    .bg-circle2{
+        position: absolute;
+        top: 20%;
+        right: 0%;
+    }
+    .bg-circle3{
+        position: absolute;
+        left: 0%;
+        bottom:0%;
+    }
+    .bg-circle4{
+        position: absolute;
+        right: 0%;
+        bottom: 15%;
+    }
+}
+
+#about-section{
+    margin-top: 100px;
+    position: relative;
+    .about-content{
+        display: flex;
+        gap: 50px;
+        align-items: center;
+        margin-top: 50px;
+        .about-img{
+            width: 50%;
+            img{
+                width: 100%;
+                border-radius: 30px;
+                box-shadow: 0 0 6px gray ;
+            }
+        }
+        .about-desc{
+            width: 50%;
+            p{
+                font-size: 1.2rem;
+                line-height: 1.5;
+            }
+        }
+    }
+    .bg-circle{
+        position: absolute;
+        right: 0%;
+        bottom: -40%;
+        z-index: -1;
+    }
+    .bg-circle5{
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        z-index: -1;
+    }
+}
+
+#access-section{
+    margin-top: 150px;
+    position: relative;
+    #map{
+        width: 90%;
+        height: 400px;
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+    .bg-circle4{
+        position: absolute;
+        top: 8%;
+        z-index: -1;
+    }
+    .bg-circle5{
+        position: absolute;
+        right: 0%;
+        bottom: -15%;
+        z-index: -1;
+    }
+}
+
+#contact-section{
+    margin-top: 150px;
+    .section-title{
+        margin-bottom: 50px;
+    }
+    form{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        gap: 20px;
+        label{
+            width: 30%;
+        }
+        input{
+            width: 50%;
+            padding: 15px;
+            border:1px solid #0E3E30;
+            border-radius: 30px;
+        }
+        textarea{
+            width: 50%;
+            height: 250px;
+            border:1px solid #0E3E30;
+            border-radius: 30px;
+        }
+        .send-btn{
+            width: 100%;
+            text-align: center;
+            margin-top: 30px;
+            button{
+                padding: 20px 80px;
+                background-color: #0E3E30;
+                color: #ffffff;
+                border-radius:50px ;
+                box-shadow: 0 0 6px gray;
+            }
+        }
+    }
+}
+
+footer{
+    width: 100%;
+    color: #ffffff;
+    background-color: #0E3E30;
+    margin-top: 150px;
+    .footer-content{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 50px 0;
+        h1{
+            font-size: 2rem;
+        }
+        p{
+            font-size: 0.75rem;
+            margin-bottom: 5px;
+        }
+    }
+    .copy-right{
+        text-align: center;
+        padding: 10px 0;
+        font-size: 0.5rem;
+    }
+}
+
+@media screen and (max-width:800px) {
+    html{
+        font-size: 14px;
+    }
+    .global-nav{
+        display: none;
+    }
+    #top-section{
+        margin-top: 140px;
+        .top-title-inner{
+            width: 100%;
+        }
+    }
+
+    #about-section{
+        margin-top: 50px;
+        .about-content{
+            flex-direction: column;
+            .about-img,.about-desc{
+                width: 80%;
+            }
+        }
+    }
+    #contact-section{
+        form{
+            flex-direction: column;
+            input,textarea,label{
+                width: 80%;
+            }
+        }
+    }
+}
+
+@media  screen and (max-width:380px) {
+    html{
+        font-size: 12px;
+    }
+}
