@@ -3,17 +3,14 @@ html {
 }
 
 body {
-  font-family: 'Zen Maru Gothic', sans-serif;
+  font-family: "Zen Maru Gothic", sans-serif;
   color: #0E3E30;
 }
 
 header {
   max-width: 1100px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 header .site-title {
   font-size: 2.5rem;
   font-weight: bold;
@@ -21,7 +18,6 @@ header .site-title {
   top: 6.5%;
   left: 12%;
 }
-
 header .global-nav {
   background-color: #0E3E30;
   padding: 20px 50px;
@@ -29,20 +25,14 @@ header .global-nav {
   position: fixed;
   top: 5%;
   right: 12%;
-  -webkit-box-shadow: 0 0 10px gray;
-          box-shadow: 0 0 10px gray;
+  box-shadow: 0 0 10px gray;
   z-index: 999999;
 }
-
 header .global-nav ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 50px;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
 }
-
 header .global-nav ul li {
   color: #ffffff;
 }
@@ -52,16 +42,13 @@ header .global-nav ul li {
   margin: 0 auto;
   padding: 0 16px;
 }
-
 .section .section-title {
   text-align: center;
 }
-
 .section .section-title h1 {
   font-size: 2rem;
   font-weight: bold;
 }
-
 .section .section-title p {
   font-size: 1rem;
 }
@@ -71,7 +58,6 @@ header .global-nav ul li {
   margin-top: 200px;
   position: relative;
 }
-
 #top-section .top-title-inner {
   width: 80%;
   margin: 0 auto;
@@ -79,16 +65,13 @@ header .global-nav ul li {
   border-radius: 75px;
   background-image: url(../img/bg-leaves.png);
 }
-
 #top-section .top-title-inner .top-title {
   position: absolute;
   top: 38%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   z-index: 9999;
 }
-
 #top-section .top-title-inner .top-title h1 {
   font-size: 2rem;
   font-weight: bold;
@@ -96,40 +79,33 @@ header .global-nav ul li {
   background-color: #ffffff;
   padding: 10px;
 }
-
 #top-section .top-title-inner .top-title h1 .main-word {
   color: #11AD7F;
 }
-
 #top-section .top-title-inner .top-title .sub-word {
   text-align: center;
   margin-top: 10px;
 }
-
 #top-section .top-title-inner .top-title .sub-word span {
   background-color: #ffffff;
   color: #0E3E30;
   padding: 0 5px;
 }
-
 #top-section .bg-circle {
   position: absolute;
   top: 0%;
   left: 0%;
 }
-
 #top-section .bg-circle2 {
   position: absolute;
   top: 20%;
   right: 0%;
 }
-
 #top-section .bg-circle3 {
   position: absolute;
   left: 0%;
   bottom: 0%;
 }
-
 #top-section .bg-circle4 {
   position: absolute;
   right: 0%;
@@ -140,45 +116,33 @@ header .global-nav ul li {
   margin-top: 100px;
   position: relative;
 }
-
 #about-section .about-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 50px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   margin-top: 50px;
 }
-
 #about-section .about-content .about-img {
   width: 50%;
 }
-
 #about-section .about-content .about-img img {
   width: 100%;
   border-radius: 30px;
-  -webkit-box-shadow: 0 0 6px gray;
-          box-shadow: 0 0 6px gray;
+  box-shadow: 0 0 6px gray;
 }
-
 #about-section .about-content .about-desc {
   width: 50%;
 }
-
 #about-section .about-content .about-desc p {
   font-size: 1.2rem;
   line-height: 1.5;
 }
-
 #about-section .bg-circle {
   position: absolute;
   right: 0%;
   bottom: -40%;
   z-index: -1;
 }
-
 #about-section .bg-circle5 {
   position: absolute;
   top: 0%;
@@ -190,20 +154,20 @@ header .global-nav ul li {
   margin-top: 150px;
   position: relative;
 }
-
 #access-section #map {
   width: 90%;
   height: 400px;
   margin: 0 auto;
   margin-top: 50px;
 }
-
+#access-section #map img {
+  width: 100%;
+}
 #access-section .bg-circle4 {
   position: absolute;
   top: 8%;
   z-index: -1;
 }
-
 #access-section .bg-circle5 {
   position: absolute;
   right: 0%;
@@ -214,56 +178,42 @@ header .global-nav ul li {
 #contact-section {
   margin-top: 150px;
 }
-
 #contact-section .section-title {
   margin-bottom: 50px;
 }
-
 #contact-section form {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
   gap: 20px;
 }
-
 #contact-section form label {
   width: 30%;
 }
-
 #contact-section form input {
   width: 50%;
   padding: 15px;
   border: 1px solid #0E3E30;
   border-radius: 30px;
 }
-
 #contact-section form textarea {
   width: 50%;
   height: 250px;
   border: 1px solid #0E3E30;
   border-radius: 30px;
 }
-
 #contact-section form .send-btn {
   width: 100%;
   text-align: center;
   margin-top: 30px;
 }
-
 #contact-section form .send-btn button {
   padding: 20px 80px;
   background-color: #0E3E30;
   color: #ffffff;
   border-radius: 50px;
-  -webkit-box-shadow: 0 0 6px gray;
-          box-shadow: 0 0 6px gray;
+  box-shadow: 0 0 6px gray;
 }
 
 footer {
@@ -272,28 +222,19 @@ footer {
   background-color: #0E3E30;
   margin-top: 150px;
 }
-
 footer .footer-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  align-items: center;
+  justify-content: space-around;
   padding: 50px 0;
 }
-
 footer .footer-content h1 {
   font-size: 2rem;
 }
-
 footer .footer-content p {
   font-size: 0.75rem;
   margin-bottom: 5px;
 }
-
 footer .copy-right {
   text-align: center;
   padding: 10px 0;
@@ -317,28 +258,20 @@ footer .copy-right {
     margin-top: 50px;
   }
   #about-section .about-content {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   #about-section .about-content .about-img, #about-section .about-content .about-desc {
     width: 80%;
   }
   #contact-section form {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   #contact-section form input, #contact-section form textarea, #contact-section form label {
     width: 80%;
   }
 }
-
 @media screen and (max-width: 380px) {
   html {
     font-size: 12px;
   }
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
